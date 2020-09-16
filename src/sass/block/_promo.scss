@@ -1,0 +1,71 @@
+.promo {
+    min-height: 650px;
+    padding: 21px 0 93px 0;
+    background: url('../img/bg/bg_main.jpg') center (center/cover) no-repeat;
+    /* !ДВА НИЖНИХ ПОДЧЁРКИВАНИЯ! */
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        margin-top: 91px;
+    }
+    &__header {
+        font-size: 42px;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        text-align: right;
+        color: #ffffff;
+        text-transform: uppercase;
+    }
+    &__subheader {
+        margin-top: 17px;
+        font-size: 24px;
+        font-weight: 500;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        text-align: right;
+        color: #ffffff;
+        text-transform: uppercase;
+    }
+    &__icons {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 66px;
+        width: 425px;
+        font-size: 14px;
+        font-weight: 500;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        text-align: center;
+        color: #ffffff;
+        img {
+            display: block;
+            margin: 0 auto;
+            margin-bottom: 20px;
+        }
+    }
+    &__link {
+        margin-top: 18px;
+        font-size: 16px;
+        font-weight: 500;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        text-align: right;
+        color: #ffffff;
+        a {
+            color: #ffffff;
+            text-decoration: underline;
+            text-transform: uppercase;
+        }
+    }
+
+}
