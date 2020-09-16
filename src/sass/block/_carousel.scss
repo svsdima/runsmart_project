@@ -63,7 +63,9 @@
       .carousel-dots li button:hover:before,
       .carousel-dots li button:focus:before {
         opacity: 1;
-        content: url('../icons/dot_red_solid_2.svg');
+        // content: url('../icons/dot_red_solid_2.svg');
+        border: none;
+        transition: 0.5s all;
       }
       
       .carousel-dots li button:before {
