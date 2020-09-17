@@ -31,4 +31,12 @@
         background-color: $main_color;
         font-size: 14px;
     }
+    
+    &:hover {
+        cursor: pointer;
+        transition: 0.1s all;
+        color: #450000;
+        box-shadow: 3px 3px 10px #450000;
+        border: none;
+    }
 }

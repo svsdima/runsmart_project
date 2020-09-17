@@ -50,6 +50,14 @@
 }
 
 @media (max-width: 767px) {
+    .button {
+        &:hover {
+            transition: none;
+            color: #ffffff;
+            box-shadow: none;
+            border: none;
+        }
+    }
     .promo {
     .header {
         &__logo {
@@ -109,6 +117,17 @@
         &__text {
             margin: 20px 30px 0 30px;
             text-align: center;
+        }
+    }
+    .footer {
+        &__social-item {
+            &:hover {
+                transition: none;
+                box-shadow: none;
+                color: none;
+                border: solid 2px #ffffff;
+                border-radius: 100%;
+            }
         }
     }
 }
@@ -231,6 +250,14 @@
         }
         &__content {
             justify-content: center;
+        }
+    }
+    .footer {
+        &__addr {
+            font-size: 17px;
+        }
+        &__phone {
+            font-size: 17px;
         }
     }
     
