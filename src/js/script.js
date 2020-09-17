@@ -82,6 +82,8 @@ const pi = 3.14; const используется, если значение вс�
 
 // logging(9, 8);
 
+/* Скрипт карусели */
+
 $(document).ready(function(){
     $('.carousel__inner').slick({
         speed: 1000, /* Скорость перелистывания */
@@ -102,9 +104,45 @@ $(document).ready(function(){
         ]
       });
 
+/* Скрипт переключения каталога (фитнес, бег) */
+
     $('ul.catalog__tabs').on('click', 'li:not(.catalog__tab_active)', function() {
         $(this)
-        .addClass('active').siblings().removeClass('active')
-        .closest('div.tabs').find('div.tabs__content').removeClass('active').eq($(this).index()).addClass('active');
+        .addClass('catalog__tab_active').siblings().removeClass('catalog__tab_active')
+        .closest('div.container').find('div.catalog__content').removeClass('catalog__content_active').eq($(this).index()).addClass('catalog__content_active');
     });
+
+// /* Скрипт подробнее */
+//     $('.catalog-item__link').each(function(i) {
+//         $(this).on('click', function(e) {
+//             e.preventDefault();
+//             $('.catalog-item__content').eq(i).toggleClass('catalog-item__content_active');
+//             $('.catalog-item__list').eq(i).toggleClass('catalog-item__list_active');
+//         })
+//     });
+// /* Скрипт назад */
+//     $('.catalog-item__back').each(function(i) {
+//         $(this).on('click', function(e) {
+//             e.preventDefault();
+//             $('.catalog-item__content').eq(i).toggleClass('catalog-item__content_active');
+//             $('.catalog-item__list').eq(i).toggleClass('catalog-item__list_active');
+//         })
+//     });
+
+/* Скрипт переключения подробнее и назад. Сделано для оптимизации проекта. */
+
+    function toggleSlide(item) {
+        $('item').each(function(i) {
+            $(this).on('click', function(e) {
+                e.preventDefault();
+                $('.catalog-item__content').eq(i).toggleClass('catalog-item__content_active');
+                $('.catalog-item__list').eq(i).toggleClass('catalog-item__list_active');
+            })
+        });
+    };
+
+/* Подключение подробнее и назад */
+
+    toggleClass('.catalog-item__link');
+    toggleSlide('.catalog-item__back');
   });
