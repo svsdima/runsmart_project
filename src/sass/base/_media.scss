@@ -34,7 +34,7 @@
     }
     .carousel {
         &__inner {
-            width: 60%;
+            width: 90%;
         img {
             width: 100%;
         }
@@ -74,6 +74,11 @@
         }
         &__subheader {
             margin-top: 20px;
+        }
+    }
+    .catalog {
+        &__content {
+            justify-content: space-around;
         }
     }
 }
@@ -145,7 +150,7 @@
     .advantages {
         padding: 50px 0 60px 0;
         .title {
-            font-size: 28px;
+            font-size: 27px;
         }
         &__header {
             margin-top: 15px;
@@ -173,6 +178,7 @@
             text-align: center;
         }
         .feed-form {
+            // width: 100%;
             margin: 0 auto;
             margin-top: 50px;
             margin-right: 35px;
@@ -183,4 +189,19 @@
     //         bottom: -100px;
     //       }
     // }
+    .catalog {
+        .title {
+            font-size: 27px;
+        }
+        &__tabs {
+            flex-direction: column;
+        }
+        &__tab {
+            margin: 10px 0;
+        }
+        &__content {
+            justify-content: center;
+        }
+    }
+    
 }

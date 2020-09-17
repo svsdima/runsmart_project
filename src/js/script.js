@@ -132,7 +132,7 @@ $(document).ready(function(){
 /* Скрипт переключения подробнее и назад. Сделано для оптимизации проекта. */
 
     function toggleSlide(item) {
-        $('item').each(function(i) {
+        $(item).each(function(i) {
             $(this).on('click', function(e) {
                 e.preventDefault();
                 $('.catalog-item__content').eq(i).toggleClass('catalog-item__content_active');
@@ -143,6 +143,9 @@ $(document).ready(function(){
 
 /* Подключение подробнее и назад */
 
-    toggleClass('.catalog-item__link');
+    toggleSlide('.catalog-item__link');
     toggleSlide('.catalog-item__back');
-  });
+
+/* Делаю оптимизацию для мобилок */
+
+});
