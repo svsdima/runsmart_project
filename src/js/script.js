@@ -146,6 +146,25 @@ $(document).ready(function(){
     toggleSlide('.catalog-item__link');
     toggleSlide('.catalog-item__back');
 
-/* Делаю оптимизацию для мобилок */
+/* Подключаю модальное окно с консультацией*/
 
+    $('[data-modal=consultation]').on('click', function () {
+        $('.overlay, #consultation').fadeIn('slow');
+
+    });
+/* Подключаю крестик (чтоб закрыть модальное окно) */
+    $('.modal__close').on('click', function(){
+        $('.overlay, #consultation, #thanks, #order').fadeOut('slow');
+    });
+/* Подключаю модальное окно с покупкой */
+    // $('.button_mini').on('click', function() {
+    //     $('.overlay, #order').fadeIn('slow');
+    // });
+
+    $('.button_mini').each(function(i) {
+        $(this).on('click', function() {
+            $('#order .modal__descr').text($('.catalog-item__subtitle').eq(i).text());
+            $('.overlay, #order').fadeIn('slow');
+        })
+    });
 });
