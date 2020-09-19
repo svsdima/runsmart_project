@@ -98,9 +98,9 @@
                 Просто заполните форму заявки <br>
                 и мы перезвоним вам в течении 10 минут
             </div>
-            <form class="feed-form" action="#"> <!-- Делаем форму заявки -->
+            <form id="consultation-form" class="feed-form" action="#"> <!-- Делаем форму заявки -->
                 <input name="name" required placeholder="Ваше имя" type="text"> <!-- Поле для ввода -->
-                <input name="phone" required placeholder="Ваш телефон" type="number">
+                <input name="phone" required placeholder="Ваш телефон">
                 <input name="email" required placeholder="Ваш E-mail" type="email">
 
                 <button class="button button_submit">заказать кОНСУЛЬТАЦИЮ</button>
@@ -129,7 +129,7 @@
             <h2 class="title">Каталог пульсометров</h2>
             <ul class="catalog__tabs">
                 <li class="catalog__tab catalog__tab_active"><div>Для фитнеса</div></li>
-                <li class="catalog__tab"><div>для бега</div></li>
+                <li class="catalog__tab"><div>для велоспорта</div></li>
                 <li class="catalog__tab"><div>для бега</div></li>
             </ul>
 
@@ -137,9 +137,35 @@
                 <div class="catalog-item">
                     <div class="catalog-item__wrapper">
                         <div class="catalog-item__content catalog-item__content_active">
-                            <img src="img/catalog/polar_ft1.png" alt="puls" class="catalog-item__img">
-                            <div class="catalog-item__subtitle">Пульсометр Polar FT1</div>
-                            <div class="catalog-item__descr">Для первых шагов в тренировках, основанных на сердечном ритме</div>
+                            <img src="img/catalog/m200.png" alt="puls" class="catalog-item__img">
+                            <div class="catalog-item__subtitle">Polar M200</div>
+                            <div class="catalog-item__descr">Датчик с пульсометром на запястье <br>
+                                Программа бега Polar <br> Сменные браслеты</div>
+                            <a href="" class="catalog-item__link">ПОДРОБНЕЕ</a>
+                        </div>
+                        <ul class="catalog-item__list">
+                            <li>Фитнес-трекер Polar A370 оснащен пульсометром на запястье, который отслеживает частоту сердечных сокращений в режиме 24/7;</li>
+                            <li>Усовершенствованная функция анализа сна Sleep Plus от Polar предоставляет все данные о вашем сне, помогая вам сбалансировать свой образ жизни;</li>
+                            <li>Используется сигнал GPS телефона для отслеживания темпа бега и расстояния, что позволяет составить маршрут;</li>
+                            <a href="#" class="catalog-item__back">назад</a>
+                        </ul>
+                    </div>
+                    <hr>
+
+                    <div class="catalog-item__footer">
+                        <div class="catalog-item__prices">
+                            <div class="catalog-item__old-price">12 490 руб.</div>
+                            <div class="catalog-item__price">10 900 руб.</div>
+                        </div>
+                        <button class="button button_mini">КУПИТЬ</button>
+                    </div>
+                </div>
+                <div class="catalog-item">
+                    <div class="catalog-item__wrapper">
+                        <div class="catalog-item__content catalog-item__content_active">
+                            <img src="img/catalog/a370.png" alt="puls" class="catalog-item__img">
+                            <div class="catalog-item__subtitle">Polar A370</div>
+                            <div class="catalog-item__descr">Непрерывное измерение сердечного ритма <br> Отслеживание сна с помощью Polar Sleep Plus</div>
                             <a href="" class="catalog-item__link">ПОДРОБНЕЕ</a>
                         </div>
                         <ul class="catalog-item__list">
@@ -154,8 +180,8 @@
 
                     <div class="catalog-item__footer">
                         <div class="catalog-item__prices">
-                            <div class="catalog-item__old-price">4 750 руб.</div>
-                            <div class="catalog-item__price">4 500 руб.</div>
+                            <div class="catalog-item__old-price"></div>
+                            <div class="catalog-item__price">14 490 руб.</div>
                         </div>
                         <button class="button button_mini">КУПИТЬ</button>
                     </div>
@@ -163,42 +189,16 @@
                 <div class="catalog-item">
                     <div class="catalog-item__wrapper">
                         <div class="catalog-item__content catalog-item__content_active">
-                            <img src="img/catalog/polar_ft1.png" alt="puls" class="catalog-item__img">
-                            <div class="catalog-item__subtitle">Пульсометр Suunto M2</div>
-                            <div class="catalog-item__descr">Пульсометр начального уровня с комфортным тканевым ремешком</div>
+                            <img src="img/catalog/grid_x.png" alt="puls" class="catalog-item__img">
+                            <div class="catalog-item__subtitle">Polar Grit X</div>
+                            <div class="catalog-item__descr">Готовьтесь к новым приключением с часами для спорта на открытом воздухе</div>
                             <a href="" class="catalog-item__link">ПОДРОБНЕЕ</a>
                         </div>
                         <ul class="catalog-item__list">
-                            <li>Вы услышите звуковое оповещение о нужном пульсе во время тренировки;</li>
-                            <li>Вы увидите информативный графический индикатор целевых тренировочных зон пульса;</li>
-                            <li>Также Вы увидите информацию о расходе калорий за тренировку;</li>
-                            <li>Вы сможете посмотреть данные по 10 тренировкам.</li>
-                            <a href="#" class="catalog-item__back">назад</a>
-                        </ul>
-                    </div>
-                    <hr>
-
-                    <div class="catalog-item__footer">
-                        <div class="catalog-item__prices">
-                            <div class="catalog-item__old-price">6 990 руб.</div>
-                            <div class="catalog-item__price">6 641 руб.</div>
-                        </div>
-                        <button class="button button_mini">КУПИТЬ</button>
-                    </div>
-                </div>
-                <div class="catalog-item">
-                    <div class="catalog-item__wrapper">
-                        <div class="catalog-item__content catalog-item__content_active">
-                            <img src="img/catalog/polar_ft1.png" alt="puls" class="catalog-item__img">
-                            <div class="catalog-item__subtitle">Пульсометр Polar FT1</div>
-                            <div class="catalog-item__descr">Для первых шагов в тренировках, основанных на сердечном ритме</div>
-                            <a href="" class="catalog-item__link">ПОДРОБНЕЕ</a>
-                        </div>
-                        <ul class="catalog-item__list">
-                            <li>Вы услышите звуковое оповещение о нужном пульсе во время тренировки;</li>
-                            <li>Вы увидите информативный графический индикатор целевых тренировочных зон пульса;</li>
-                            <li>Также Вы увидите информацию о расходе калорий за тренировку;</li>
-                            <li>Вы сможете посмотреть данные по 10 тренировкам.</li>
+                            <li>Подробная статистика по подъемам и спускам с функцией Hill Splitter™;</li>
+                            <li>Планирование маршрутов с помощью Komoot;</li>
+                            <li>Смарт-функция пополнения энергии FuelWise™;</li>
+                            <li>Nightly Recharge™: показатель восстановления.</li>
                             <a href="#" class="catalog-item__back">назад</a>
                         </ul>
                     </div>
@@ -206,8 +206,8 @@
     
                     <div class="catalog-item__footer">
                         <div class="catalog-item__prices">
-                            <div class="catalog-item__old-price">4 750 руб.</div>
-                            <div class="catalog-item__price">4 500 руб.</div>
+                            <div class="catalog-item__old-price">36 590 руб.</div>
+                            <div class="catalog-item__price">34 990 руб.</div>
                         </div>
                         <button class="button button_mini">КУПИТЬ</button>
                     </div>
@@ -215,16 +215,17 @@
                 <div class="catalog-item">
                     <div class="catalog-item__wrapper">
                         <div class="catalog-item__content catalog-item__content_active">
-                            <img src="img/catalog/polar_ft1.png" alt="puls" class="catalog-item__img">
-                            <div class="catalog-item__subtitle">Пульсометр Polar FT1</div>
-                            <div class="catalog-item__descr">Для первых шагов в тренировках, основанных на сердечном ритме</div>
+                            <img src="img/catalog/vantage.png" alt="puls" class="catalog-item__img">
+                            <div class="catalog-item__subtitle">Polar Vantage V Titan</div>
+                            <div class="catalog-item__descr">Материалы премиум-класса <br>
+                                Новейший фитнес-браслет с пульсометром <br>
+                                Training Load Pro™ и Recovery Pro™</div>
                             <a href="" class="catalog-item__link">ПОДРОБНЕЕ</a>
                         </div>
                         <ul class="catalog-item__list">
-                            <li>Вы услышите звуковое оповещение о нужном пульсе во время тренировки;</li>
-                            <li>Вы увидите информативный графический индикатор целевых тренировочных зон пульса;</li>
-                            <li>Также Вы увидите информацию о расходе калорий за тренировку;</li>
-                            <li>Вы сможете посмотреть данные по 10 тренировкам.</li>
+                            <li>Изучайте детали каждой тренировки, планируйте нагрузку — от отдельных занятий до целого сезона — и отслеживайте свои успехи;</li>
+                            <li>Polar Vantage V Titan измеряет ЧСС на запястье, используя технологию сочетания датчиков Precision Prime;</li>
+                            <li>TRAINING LOAD PRO и RECOVERY PRO помогают поддерживать оптимальное соотношение между тренировками и восстановлением.</li>
                             <a href="#" class="catalog-item__back">назад</a>
                         </ul>
                     </div>
@@ -232,8 +233,8 @@
     
                     <div class="catalog-item__footer">
                         <div class="catalog-item__prices">
-                            <div class="catalog-item__old-price">4 750 руб.</div>
-                            <div class="catalog-item__price">4 500 руб.</div>
+                            <div class="catalog-item__old-price"></div>
+                            <div class="catalog-item__price">50 990 руб.</div>
                         </div>
                         <button class="button button_mini">КУПИТЬ</button>
                     </div>
@@ -241,16 +242,17 @@
                 <div class="catalog-item">
                     <div class="catalog-item__wrapper">
                         <div class="catalog-item__content catalog-item__content_active">
-                            <img src="img/catalog/polar_ft1.png" alt="puls" class="catalog-item__img">
-                            <div class="catalog-item__subtitle">Пульсометр Polar FT1</div>
-                            <div class="catalog-item__descr">Для первых шагов в тренировках, основанных на сердечном ритме</div>
+                            <img src="img/catalog/vantage_v.png" alt="puls" class="catalog-item__img">
+                            <div class="catalog-item__subtitle">Polar Vantage V</div>
+                            <div class="catalog-item__descr">GPS и барометр <br>
+                                Новейший фитнес-браслет с пульсометром <br>
+                                Тренировочная нагрузка и Recovery Pro <br></div>
                             <a href="" class="catalog-item__link">ПОДРОБНЕЕ</a>
                         </div>
                         <ul class="catalog-item__list">
-                            <li>Вы услышите звуковое оповещение о нужном пульсе во время тренировки;</li>
-                            <li>Вы увидите информативный графический индикатор целевых тренировочных зон пульса;</li>
-                            <li>Также Вы увидите информацию о расходе калорий за тренировку;</li>
-                            <li>Вы сможете посмотреть данные по 10 тренировкам.</li>
+                            <li>Polar Vantage V работает с различными решениями для отслеживания ЧСС, позволяя выбрать оптимальный для вашего вида спорта вариант мониторинга сердечного ритма;</li>
+                            <li>Polar Vantage V измеряет мощность бега на запястье — вам больше не нужны дополнительные датчики бега;</li>
+                            <li>Часы Polar Vantage V завоевали награды за дизайн и прошли несколько испытаний на соответствие военным стандартам.</li>
                             <a href="#" class="catalog-item__back">назад</a>
                         </ul>
                     </div>
@@ -258,8 +260,8 @@
     
                     <div class="catalog-item__footer">
                         <div class="catalog-item__prices">
-                            <div class="catalog-item__old-price">4 750 руб.</div>
-                            <div class="catalog-item__price">4 500 руб.</div>
+                            <div class="catalog-item__old-price">42 490 руб.</div>
+                            <div class="catalog-item__price">40 990 руб.</div>
                         </div>
                         <button class="button button_mini">КУПИТЬ</button>
                     </div>
@@ -267,16 +269,18 @@
                 <div class="catalog-item">
                     <div class="catalog-item__wrapper">
                         <div class="catalog-item__content catalog-item__content_active">
-                            <img src="img/catalog/polar_ft1.png" alt="puls" class="catalog-item__img">
-                            <div class="catalog-item__subtitle">Пульсометр Polar FT1</div>
-                            <div class="catalog-item__descr">Для первых шагов в тренировках, основанных на сердечном ритме</div>
+                            <img src="img/catalog/vantage_m.png" alt="puls" class="catalog-item__img">
+                            <div class="catalog-item__subtitle">Vantage M</div>
+                            <div class="catalog-item__descr">Новейший фитнес-браслет с пульсометром
+                                Training Load Pro <br>
+                                Сменные браслеты</div>
                             <a href="" class="catalog-item__link">ПОДРОБНЕЕ</a>
                         </div>
                         <ul class="catalog-item__list">
-                            <li>Вы услышите звуковое оповещение о нужном пульсе во время тренировки;</li>
-                            <li>Вы увидите информативный графический индикатор целевых тренировочных зон пульса;</li>
-                            <li>Также Вы увидите информацию о расходе калорий за тренировку;</li>
-                            <li>Вы сможете посмотреть данные по 10 тренировкам.</li>
+                            <li>Polar Vantage M отслеживает ЧСС, используя технологию сочетания датчиков Precision Prime™;</li>
+                            <li>Polar Vantage M помогает оценить тренировки и узнать, какую нагрузку получает ваше тело во время различных тренировок;</li>
+                            <li>Благодаря Polar Vantage M вы можете установить индивидуальные настройки для каждого вида спорта;</li>
+                            <li>Поделитесь тренировочными данными со своим тренером при помощи бесплатной услуги Polar Flow for Coach.</li>
                             <a href="#" class="catalog-item__back">назад</a>
                         </ul>
                     </div>
@@ -296,16 +300,17 @@
                 <div class="catalog-item">
                     <div class="catalog-item__wrapper">
                         <div class="catalog-item__content catalog-item__content_active">
-                            <img src="img/catalog/polar_ft1.png" alt="puls" class="catalog-item__img">
-                            <div class="catalog-item__subtitle">Пульсометр Polar FT1</div>
-                            <div class="catalog-item__descr">Для первых шагов в тренировках, основанных на сердечном ритме</div>
+                            <img src="img/catalog/v650.png" alt="puls" class="catalog-item__img">
+                            <div class="catalog-item__subtitle">Polar V650</div>
+                            <div class="catalog-item__descr">Цветной сенсорный дисплей <br>
+                                Карты и руководство по маршруту <br>
+                                Поддержка Strava Live Segments</div>
                             <a href="" class="catalog-item__link">ПОДРОБНЕЕ</a>
                         </div>
                         <ul class="catalog-item__list ">
-                            <li>Вы услышите звуковое оповещение о нужном пульсе во время тренировки;</li>
-                            <li>Вы увидите информативный графический индикатор целевых тренировочных зон пульса;</li>
-                            <li>Также Вы увидите информацию о расходе калорий за тренировку;</li>
-                            <li>Вы сможете посмотреть данные по 10 тренировкам.</li>
+                            <li>Благодаря поддержке OpenStreetMap вы сможете скачать данные карты территориальной зоны, где вы будете ездить, и видеть свое точное расположение в режиме реального времени;</li>
+                            <li>Синхронизируйте любимые маршруты с Polar Flow на устройство V650;</li>
+                            <li>V650 скачивает данные карты блоком 450x450 километров — достаточно даже для самой амбициозной дневной поездки/</li>
                             <a href="#" class="catalog-item__back">назад</a>
                         </ul>
                     </div>
@@ -313,8 +318,36 @@
     
                     <div class="catalog-item__footer">
                         <div class="catalog-item__prices">
-                            <div class="catalog-item__old-price">4 750 руб.</div>
-                            <div class="catalog-item__price">4 500 руб.</div>
+                            <div class="catalog-item__old-price">19 790 руб.</div>
+                            <div class="catalog-item__price">17 990 руб.</div>
+                        </div>
+                        <button class="button button_mini">КУПИТЬ</button>
+                    </div>
+                </div>
+                <div class="catalog-item">
+                    <div class="catalog-item__wrapper">
+                        <div class="catalog-item__content catalog-item__content_active">
+                            <img src="img/catalog/m460.png" alt="puls" class="catalog-item__img">
+                            <div class="catalog-item__subtitle">Polar M460</div>
+                            <div class="catalog-item__descr">Улучшенное измерение мощности <br>
+                                Поддержка Strava Live Segments <br>
+                                Компактный дизайн</div>
+                            <a href="" class="catalog-item__link">ПОДРОБНЕЕ</a>
+                        </div>
+                        <ul class="catalog-item__list ">
+                            <li>Polar M460 совместим с большинством измерителей мощности с технологией Bluetooth Smart;</li>
+                            <li>Сделайте свои поездки более интересными со Strava Live Segments;</li>
+                            <li>Следите за своей скоростью, расстоянием, высотой и градиентом с помощью GPS и барометра;</li>
+                            <li>Polar M460 может работать от аккумулятора до 16 часов тренировок.</li>
+                            <a href="#" class="catalog-item__back">назад</a>
+                        </ul>
+                    </div>
+                    <hr>
+    
+                    <div class="catalog-item__footer">
+                        <div class="catalog-item__prices">
+                            <div class="catalog-item__old-price"></div>
+                            <div class="catalog-item__price">15 790 руб.</div>
                         </div>
                         <button class="button button_mini">КУПИТЬ</button>
                     </div>
@@ -324,16 +357,17 @@
                 <div class="catalog-item">
                     <div class="catalog-item__wrapper">
                         <div class="catalog-item__content catalog-item__content_active">
-                            <img src="img/catalog/polar_ft1.png" alt="puls" class="catalog-item__img">
-                            <div class="catalog-item__subtitle">Пульсометр Polar FT1</div>
-                            <div class="catalog-item__descr">Для первых шагов в тренировках, основанных на сердечном ритме</div>
+                            <img src="img/catalog/h10.png" alt="puls" class="catalog-item__img">
+                            <div class="catalog-item__subtitle">Polar H10</div>
+                            <div class="catalog-item__descr">Точность <br>
+                                Удобный нагрудный ремень <br>
+                                Встроенная память для Polar Beat</div>
                             <a href="" class="catalog-item__link">ПОДРОБНЕЕ</a>
                         </div>
                         <ul class="catalog-item__list">
-                            <li>Вы услышите звуковое оповещение о нужном пульсе во время тренировки;</li>
-                            <li>Вы увидите информативный графический индикатор целевых тренировочных зон пульса;</li>
-                            <li>Также Вы увидите информацию о расходе калорий за тренировку;</li>
-                            <li>Вы сможете посмотреть данные по 10 тренировкам.</li>
+                            <li>Самый точный датчик ЧСС в истории Polar: в Polar H10 максимально продуманы все аспекты и предусмотрены обновления ПО;</li>
+                            <li>Благодаря мягкому текстильному ремню Polar Pro с качественными электродами, Polar H10 обеспечит вам точное и бесперебойное отслеживание сердечного ритма;</li>
+                            <li>Polar H10 постоянно улучшается благодаря беспроводным обновлениям.</li>
                             <a href="#" class="catalog-item__back">назад</a>
                         </ul>
                     </div>
@@ -341,8 +375,8 @@
     
                     <div class="catalog-item__footer">
                         <div class="catalog-item__prices">
-                            <div class="catalog-item__old-price">4 750 руб.</div>
-                            <div class="catalog-item__price">4 500 руб.</div>
+                            <div class="catalog-item__old-price">8 490 руб.</div>
+                            <div class="catalog-item__price">7 990 руб.</div>
                         </div>
                         <button class="button button_mini">КУПИТЬ</button>
                     </div>
@@ -350,16 +384,17 @@
                 <div class="catalog-item">
                     <div class="catalog-item__wrapper">
                         <div class="catalog-item__content catalog-item__content_active">
-                            <img src="img/catalog/polar_ft1.png" alt="puls" class="catalog-item__img">
-                            <div class="catalog-item__subtitle">Пульсометр Polar FT1</div>
-                            <div class="catalog-item__descr">Для первых шагов в тренировках, основанных на сердечном ритме</div>
+                            <img src="img/catalog/h01.png" alt="puls" class="catalog-item__img">
+                            <div class="catalog-item__subtitle">Polar OH1 - Оптический Датчик ЧСС</div>
+                            <div class="catalog-item__descr">Встроенная память <br>
+                                Перезаряжаемый аккумулятор <br>
+                                Легко носить</div>
                             <a href="" class="catalog-item__link">ПОДРОБНЕЕ</a>
                         </div>
                         <ul class="catalog-item__list">
-                            <li>Вы услышите звуковое оповещение о нужном пульсе во время тренировки;</li>
-                            <li>Вы увидите информативный графический индикатор целевых тренировочных зон пульса;</li>
-                            <li>Также Вы увидите информацию о расходе калорий за тренировку;</li>
-                            <li>Вы сможете посмотреть данные по 10 тренировкам.</li>
+                            <li>Маленький и удобный Polar OH1 станет вашим надежным партнером для тренировок с отслеживанием ЧСС;</li>
+                            <li>В Polar OH1 предусмотрены различные варианты подключения. Вы можете одновременно использовать ANT+ и Bluetooth-соединения и получать данные ЧСС на нескольких устройствах в режиме реального времени;</li>
+                            <li>Polar OH1 — это отличное дополнение к Polar Beat, бесплатному приложению для отслеживания физической формы и тренировок от Polar;</li>
                             <a href="#" class="catalog-item__back">назад</a>
                         </ul>
                     </div>
@@ -367,34 +402,8 @@
     
                     <div class="catalog-item__footer">
                         <div class="catalog-item__prices">
-                            <div class="catalog-item__old-price">4 750 руб.</div>
-                            <div class="catalog-item__price">4 500 руб.</div>
-                        </div>
-                        <button class="button button_mini">КУПИТЬ</button>
-                    </div>
-                </div>
-                <div class="catalog-item">
-                    <div class="catalog-item__wrapper">
-                        <div class="catalog-item__content catalog-item__content_active">
-                            <img src="img/catalog/polar_ft1.png" alt="puls" class="catalog-item__img">
-                            <div class="catalog-item__subtitle">Пульсометр Polar FT1</div>
-                            <div class="catalog-item__descr">Для первых шагов в тренировках, основанных на сердечном ритме</div>
-                            <a href="" class="catalog-item__link">ПОДРОБНЕЕ</a>
-                        </div>
-                        <ul class="catalog-item__list">
-                            <li>Вы услышите звуковое оповещение о нужном пульсе во время тренировки;</li>
-                            <li>Вы увидите информативный графический индикатор целевых тренировочных зон пульса;</li>
-                            <li>Также Вы увидите информацию о расходе калорий за тренировку;</li>
-                            <li>Вы сможете посмотреть данные по 10 тренировкам.</li>
-                            <a href="#" class="catalog-item__back">назад</a>
-                        </ul>
-                    </div>
-                    <hr>
-    
-                    <div class="catalog-item__footer">
-                        <div class="catalog-item__prices">
-                            <div class="catalog-item__old-price">4 750 руб.</div>
-                            <div class="catalog-item__price">4 500 руб.</div>
+                            <div class="catalog-item__old-price"></div>
+                            <div class="catalog-item__price">7 690 руб.</div>
                         </div>
                         <button class="button button_mini">КУПИТЬ</button>
                     </div>
@@ -473,9 +482,9 @@
             <div class="modal__subtitle">Просто заполните форму заявки</div>
             <div class="modal__descr">и мы перезвоним вам в течении 10 минут</div>
             <form class="feed-form feed-form_mt25" action="#"> <!-- Делаем форму заявки -->
-                <input name="name" required placeholder="Ваше имя" type="text"> <!-- Поле для ввода -->
-                <input name="phone" required placeholder="Ваш телефон" type="number">
-                <input name="email" required placeholder="Ваш E-mail" type="email">
+                <input name="name"  placeholder="Ваше имя" type="text"> <!-- Поле для ввода -->
+                <input name="phone"  placeholder="Ваш телефон">
+                <input name="email"  placeholder="Ваш E-mail" type="email">
 
                 <button class="button button_submit">заказать кОНСУЛЬТАЦИЮ</button>
             </form>
@@ -486,9 +495,9 @@
             <div class="modal__subtitle">Ваш заказ:</div>
             <div class="modal__descr">Пульсометр Polar FT1</div>
             <form class="feed-form feed-form_mt25" action="#"> <!-- Делаем форму заявки -->
-                <input name="name" required placeholder="Ваше имя" type="text"> <!-- Поле для ввода -->
-                <input name="phone" required placeholder="Ваш телефон" type="number">
-                <input name="email" required placeholder="Ваш E-mail" type="email">
+                <input name="name" placeholder="Ваше имя" type="text"> <!-- Поле для ввода -->
+                <input name="phone" placeholder="Ваш телефон">
+                <input name="email" placeholder="Ваш E-mail" type="email">
 
                 <button class="button button_submit">Купить</button>
             </form>
@@ -505,7 +514,10 @@
     <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script src="js/slick.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/jquery.maskedinput.min.js"></script>
     <script src="js/script.js"></script>
+    
     
 </body>
 </html>

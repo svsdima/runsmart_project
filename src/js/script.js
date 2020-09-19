@@ -167,4 +167,76 @@ $(document).ready(function(){
             $('.overlay, #order').fadeIn('slow');
         })
     });
+
+    /* Валидируем формы, т.е. при заполнении формы, если что-то было не заполнено, высветится оповещение о заполнении недостающего пункта jquery.validate.min.js */ 
+    // $('#consultation-form').validate();
+    // $('#consultation form').validate( {
+    //     rules: {
+    //         name: "required",
+    //         phone: "required",
+    //         email: {
+    //             required: true,
+    //             email: true
+    //         }
+    //     },
+    //     messages: {
+    //         name: "Пожалуйста введите ваше имя",
+    //         phone: "Пожалуйста введите ваш номер телефона",
+    //         email: {
+    //           required: "Пожалуйста введите ваш email",
+    //           email: "Неправильно введён адрес email"
+    //         }
+    //       }
+    // });
+    // $('#order form').validate();
+
+
+/* Оптимизирую валидатную форму */
+
+    function validateForms(form){
+        $(form).validate( {
+            rules: {
+                name: "required",
+                phone: "required",
+                email: {
+                    required: true,
+                    email: true
+                }
+            },
+            messages: {
+                name: "Пожалуйста введите ваше имя",
+                phone: "Пожалуйста введите ваш номер телефона",
+                email: {
+                  required: "Пожалуйста введите ваш email",
+                  email: "Неправильно введён адрес email"
+                }
+              }
+        });
+    };
+
+    validateForms('#consultation-form');
+    validateForms('#consultation form');
+    validateForms('#order form');
+
+
+    /* Маска ввода номера на сайте jquery.maskedinput.min.js */
+
+    $('input[name=phone]').mask("+7 (999) 999-9999");
+
+    /* Отправка данные на почту*/
+
+    $('form').submit(function(e) {
+        e.preventDefault();
+        $.ajax({
+            type: "POST",
+            url: "mailer/smart.php",
+            data: $(this).serialize()
+        }).done(function() {
+            $(this).find("input").val("");
+            $('#consultation, #order').fadeOut();
+            $('.overlay, #thanks').fadeIn('slow');
+            $('form').trigger('reset');
+        });
+        return false;
+    });
 });
