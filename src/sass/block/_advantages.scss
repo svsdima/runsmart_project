@@ -41,4 +41,20 @@
             color: $main_color;
         }
     }
+    /* Делаю анимацию сердцебиения */
+    &__icon {
+        &_animated {
+            animation: heartbeat 2s ease infinite;
+            // animation-name: heartbeat;
+            // animation-duration: 2s;
+            // animation-timing-function: ease;
+            // animation-iteration-count: infinite;
+        }
+        &_swing {
+            animation: swing 4s ease-in-out infinite;
+        }
+        &_shake {
+            animation: shake 4s ease infinite;
+        }
+    }
 }

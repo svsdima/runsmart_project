@@ -8,10 +8,11 @@
     <link rel="stylesheet" href="css/font.css">
     <link rel="stylesheet" href="css/slick.css"/>
     <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 </head>
 <body>
     <!-- Верхняя часть сайта -->
-    <section class="promo">
+    <section id="up" class="promo">
         <div class="container">
             <!-- Делаю шапку с логотипом, названием компании и телефон с кнопкой -->
             <header class="header">
@@ -63,21 +64,21 @@
                 <h2 class="title">НАШИ ПРЕИМУЩЕСТВА</h2>
                 <div class="advantages__wrapper">
                 <div class="advantages__item">
-                    <img src="icons/advantages/cup.png" alt="cup" class="advantages__icon">
+                    <img src="icons/advantages/cup.png" alt="cup" class="advantages__icon advantages__icon_shake">
                     <div class="advantages__header">Делимся опытом</div>
                     <div class="advantages__subheader">Наши сотрудники всегда готовы поделиться своим опытом, 
                         так как сами бегают полумарафоны, переплыли Босфор, готовятся к соревнованиям по триатлону!
                     </div>
                 </div>
                 <div class="advantages__item">
-                    <img src="icons/advantages/heart.png" alt="heart" class="advantages__icon">
+                    <img src="icons/advantages/heart.png" alt="heart" class="advantages__icon advantages__icon_animated">
                     <div class="advantages__header">Заботимся о здоровье</div>
                     <div class="advantages__subheader">Мы работаем для того, 
                         чтобы Ваши занятия спортом шли на пользу Вашему здоровью и были в радость Вам и Вашим близким!
                     </div>
                 </div>
                 <div class="advantages__item">
-                    <img src="icons/advantages/shoe.png" alt="shoe" class="advantages__icon">
+                    <img src="icons/advantages/shoe.png" alt="shoe" class="advantages__icon advantages__icon_swing">
                     <div class="advantages__header">Учим бегать</div>
                     <div class="advantages__subheader">Помогаем с обучением 
                         правильной технике бега! <br>
@@ -108,7 +109,7 @@
         </div>
     </section>
 <!-- Карусель -->
-    <section class="carousel">
+    <div class="carousel">
         <div class="container">
             <div class="carousel__inner">
                 <div>
@@ -122,7 +123,7 @@
                 </div>
               </div>
         </div>
-    </section>
+    </div>
 <!-- Каталог -->
     <section class="catalog">
         <div class="container">
@@ -143,12 +144,14 @@
                                 Программа бега Polar <br> Сменные браслеты</div>
                             <a href="" class="catalog-item__link">ПОДРОБНЕЕ</a>
                         </div>
-                        <ul class="catalog-item__list">
-                            <li>Фитнес-трекер Polar A370 оснащен пульсометром на запястье, который отслеживает частоту сердечных сокращений в режиме 24/7;</li>
-                            <li>Усовершенствованная функция анализа сна Sleep Plus от Polar предоставляет все данные о вашем сне, помогая вам сбалансировать свой образ жизни;</li>
-                            <li>Используется сигнал GPS телефона для отслеживания темпа бега и расстояния, что позволяет составить маршрут;</li>
+                        <div class="catalog-item__list">
+                            <ul>
+                                <li>Фитнес-трекер Polar A370 оснащен пульсометром на запястье, который отслеживает частоту сердечных сокращений в режиме 24/7;</li>
+                                <li>Усовершенствованная функция анализа сна Sleep Plus от Polar предоставляет все данные о вашем сне, помогая вам сбалансировать свой образ жизни;</li>
+                                <li>Используется сигнал GPS телефона для отслеживания темпа бега и расстояния, что позволяет составить маршрут;</li>
+                            </ul>
                             <a href="#" class="catalog-item__back">назад</a>
-                        </ul>
+                        </div>
                     </div>
                     <hr>
 
@@ -168,13 +171,15 @@
                             <div class="catalog-item__descr">Непрерывное измерение сердечного ритма <br> Отслеживание сна с помощью Polar Sleep Plus</div>
                             <a href="" class="catalog-item__link">ПОДРОБНЕЕ</a>
                         </div>
-                        <ul class="catalog-item__list">
-                            <li>Вы услышите звуковое оповещение о нужном пульсе во время тренировки;</li>
-                            <li>Вы увидите информативный графический индикатор целевых тренировочных зон пульса;</li>
-                            <li>Также Вы увидите информацию о расходе калорий за тренировку;</li>
-                            <li>Вы сможете посмотреть данные по 10 тренировкам.</li>
+                        <div class="catalog-item__list">
+                            <ul>
+                                <li>Вы услышите звуковое оповещение о нужном пульсе во время тренировки;</li>
+                                <li>Вы увидите информативный графический индикатор целевых тренировочных зон пульса;</li>
+                                <li>Также Вы увидите информацию о расходе калорий за тренировку;</li>
+                                <li>Вы сможете посмотреть данные по 10 тренировкам.</li>
+                            </ul>
                             <a href="#" class="catalog-item__back">назад</a>
-                        </ul>
+                        </div>
                     </div>
                     <hr>
 
@@ -194,13 +199,15 @@
                             <div class="catalog-item__descr">Готовьтесь к новым приключением с часами для спорта на открытом воздухе</div>
                             <a href="" class="catalog-item__link">ПОДРОБНЕЕ</a>
                         </div>
-                        <ul class="catalog-item__list">
-                            <li>Подробная статистика по подъемам и спускам с функцией Hill Splitter™;</li>
-                            <li>Планирование маршрутов с помощью Komoot;</li>
-                            <li>Смарт-функция пополнения энергии FuelWise™;</li>
-                            <li>Nightly Recharge™: показатель восстановления.</li>
+                        <div class="catalog-item__list">
+                            <ul>
+                                <li>Подробная статистика по подъемам и спускам с функцией Hill Splitter™;</li>
+                                <li>Планирование маршрутов с помощью Komoot;</li>
+                                <li>Смарт-функция пополнения энергии FuelWise™;</li>
+                                <li>Nightly Recharge™: показатель восстановления.</li>
+                            </ul>
                             <a href="#" class="catalog-item__back">назад</a>
-                        </ul>
+                        </div>
                     </div>
                     <hr>
     
@@ -222,12 +229,14 @@
                                 Training Load Pro™ и Recovery Pro™</div>
                             <a href="" class="catalog-item__link">ПОДРОБНЕЕ</a>
                         </div>
-                        <ul class="catalog-item__list">
-                            <li>Изучайте детали каждой тренировки, планируйте нагрузку — от отдельных занятий до целого сезона — и отслеживайте свои успехи;</li>
-                            <li>Polar Vantage V Titan измеряет ЧСС на запястье, используя технологию сочетания датчиков Precision Prime;</li>
-                            <li>TRAINING LOAD PRO и RECOVERY PRO помогают поддерживать оптимальное соотношение между тренировками и восстановлением.</li>
+                        <div class="catalog-item__list">
+                            <ul>
+                                <li>Изучайте детали каждой тренировки, планируйте нагрузку — от отдельных занятий до целого сезона — и отслеживайте свои успехи;</li>
+                                <li>Polar Vantage V Titan измеряет ЧСС на запястье, используя технологию сочетания датчиков Precision Prime;</li>
+                                <li>TRAINING LOAD PRO и RECOVERY PRO помогают поддерживать оптимальное соотношение между тренировками и восстановлением.</li>
+                            </ul>
                             <a href="#" class="catalog-item__back">назад</a>
-                        </ul>
+                        </div>
                     </div>
                     <hr>
     
@@ -249,12 +258,14 @@
                                 Тренировочная нагрузка и Recovery Pro <br></div>
                             <a href="" class="catalog-item__link">ПОДРОБНЕЕ</a>
                         </div>
-                        <ul class="catalog-item__list">
-                            <li>Polar Vantage V работает с различными решениями для отслеживания ЧСС, позволяя выбрать оптимальный для вашего вида спорта вариант мониторинга сердечного ритма;</li>
-                            <li>Polar Vantage V измеряет мощность бега на запястье — вам больше не нужны дополнительные датчики бега;</li>
-                            <li>Часы Polar Vantage V завоевали награды за дизайн и прошли несколько испытаний на соответствие военным стандартам.</li>
+                        <div class="catalog-item__list">
+                            <ul>
+                                <li>Polar Vantage V работает с различными решениями для отслеживания ЧСС, позволяя выбрать оптимальный для вашего вида спорта вариант мониторинга сердечного ритма;</li>
+                                <li>Polar Vantage V измеряет мощность бега на запястье — вам больше не нужны дополнительные датчики бега;</li>
+                                <li>Часы Polar Vantage V завоевали награды за дизайн и прошли несколько испытаний на соответствие военным стандартам.</li>
+                            </ul>
                             <a href="#" class="catalog-item__back">назад</a>
-                        </ul>
+                        </div>
                     </div>
                     <hr>
     
@@ -276,13 +287,14 @@
                                 Сменные браслеты</div>
                             <a href="" class="catalog-item__link">ПОДРОБНЕЕ</a>
                         </div>
-                        <ul class="catalog-item__list">
-                            <li>Polar Vantage M отслеживает ЧСС, используя технологию сочетания датчиков Precision Prime™;</li>
-                            <li>Polar Vantage M помогает оценить тренировки и узнать, какую нагрузку получает ваше тело во время различных тренировок;</li>
-                            <li>Благодаря Polar Vantage M вы можете установить индивидуальные настройки для каждого вида спорта;</li>
-                            <li>Поделитесь тренировочными данными со своим тренером при помощи бесплатной услуги Polar Flow for Coach.</li>
+                        <div class="catalog-item__list">
+                            <ul>
+                                <li>Polar Vantage M отслеживает ЧСС, используя технологию сочетания датчиков Precision Prime™;</li>
+                                <li>Polar Vantage M помогает оценить тренировки и узнать, какую нагрузку получает ваше тело во время различных тренировок;</li>
+                                <li>Благодаря Polar Vantage M вы можете установить индивидуальные настройки для каждого вида спорта;</li>
+                            </ul>
                             <a href="#" class="catalog-item__back">назад</a>
-                        </ul>
+                        </div>
                     </div>
                     <hr>
     
@@ -307,12 +319,14 @@
                                 Поддержка Strava Live Segments</div>
                             <a href="" class="catalog-item__link">ПОДРОБНЕЕ</a>
                         </div>
-                        <ul class="catalog-item__list ">
-                            <li>Благодаря поддержке OpenStreetMap вы сможете скачать данные карты территориальной зоны, где вы будете ездить, и видеть свое точное расположение в режиме реального времени;</li>
-                            <li>Синхронизируйте любимые маршруты с Polar Flow на устройство V650;</li>
-                            <li>V650 скачивает данные карты блоком 450x450 километров — достаточно даже для самой амбициозной дневной поездки/</li>
+                        <div class="catalog-item__list ">
+                            <ul>
+                                <li>Благодаря поддержке OpenStreetMap вы сможете скачать данные карты территориальной зоны, где вы будете ездить, и видеть свое точное расположение в режиме реального времени;</li>
+                                <li>Синхронизируйте любимые маршруты с Polar Flow на устройство V650;</li>
+                                <li>V650 скачивает данные карты блоком 450x450 километров — достаточно даже для самой амбициозной дневной поездки/</li>
+                            </ul>
                             <a href="#" class="catalog-item__back">назад</a>
-                        </ul>
+                        </div>
                     </div>
                     <hr>
     
@@ -334,13 +348,15 @@
                                 Компактный дизайн</div>
                             <a href="" class="catalog-item__link">ПОДРОБНЕЕ</a>
                         </div>
-                        <ul class="catalog-item__list ">
-                            <li>Polar M460 совместим с большинством измерителей мощности с технологией Bluetooth Smart;</li>
-                            <li>Сделайте свои поездки более интересными со Strava Live Segments;</li>
-                            <li>Следите за своей скоростью, расстоянием, высотой и градиентом с помощью GPS и барометра;</li>
-                            <li>Polar M460 может работать от аккумулятора до 16 часов тренировок.</li>
+                        <div class="catalog-item__list ">
+                            <ul>
+                                <li>Polar M460 совместим с большинством измерителей мощности с технологией Bluetooth Smart;</li>
+                                <li>Сделайте свои поездки более интересными со Strava Live Segments;</li>
+                                <li>Следите за своей скоростью, расстоянием, высотой и градиентом с помощью GPS и барометра;</li>
+                                <li>Polar M460 может работать от аккумулятора до 16 часов тренировок.</li>
+                            </ul>
                             <a href="#" class="catalog-item__back">назад</a>
-                        </ul>
+                        </div>
                     </div>
                     <hr>
     
@@ -364,12 +380,14 @@
                                 Встроенная память для Polar Beat</div>
                             <a href="" class="catalog-item__link">ПОДРОБНЕЕ</a>
                         </div>
-                        <ul class="catalog-item__list">
-                            <li>Самый точный датчик ЧСС в истории Polar: в Polar H10 максимально продуманы все аспекты и предусмотрены обновления ПО;</li>
-                            <li>Благодаря мягкому текстильному ремню Polar Pro с качественными электродами, Polar H10 обеспечит вам точное и бесперебойное отслеживание сердечного ритма;</li>
-                            <li>Polar H10 постоянно улучшается благодаря беспроводным обновлениям.</li>
+                        <div class="catalog-item__list">
+                            <ul>
+                                <li>Самый точный датчик ЧСС в истории Polar: в Polar H10 максимально продуманы все аспекты и предусмотрены обновления ПО;</li>
+                                <li>Благодаря мягкому текстильному ремню Polar Pro с качественными электродами, Polar H10 обеспечит вам точное и бесперебойное отслеживание сердечного ритма;</li>
+                                <li>Polar H10 постоянно улучшается благодаря беспроводным обновлениям.</li>
+                            </ul>
                             <a href="#" class="catalog-item__back">назад</a>
-                        </ul>
+                        </div>
                     </div>
                     <hr>
     
@@ -391,12 +409,14 @@
                                 Легко носить</div>
                             <a href="" class="catalog-item__link">ПОДРОБНЕЕ</a>
                         </div>
-                        <ul class="catalog-item__list">
-                            <li>Маленький и удобный Polar OH1 станет вашим надежным партнером для тренировок с отслеживанием ЧСС;</li>
-                            <li>В Polar OH1 предусмотрены различные варианты подключения. Вы можете одновременно использовать ANT+ и Bluetooth-соединения и получать данные ЧСС на нескольких устройствах в режиме реального времени;</li>
-                            <li>Polar OH1 — это отличное дополнение к Polar Beat, бесплатному приложению для отслеживания физической формы и тренировок от Polar;</li>
+                        <div class="catalog-item__list">
+                            <ul>
+                                <li>Маленький и удобный Polar OH1 станет вашим надежным партнером для тренировок с отслеживанием ЧСС;</li>
+                                <li>В Polar OH1 предусмотрены различные варианты подключения. Вы можете одновременно использовать ANT+ и Bluetooth-соединения и получать данные ЧСС на нескольких устройствах в режиме реального времени;</li>
+                                <li>Polar OH1 — это отличное дополнение к Polar Beat, бесплатному приложению для отслеживания физической формы и тренировок от Polar;</li>
+                            </ul>
                             <a href="#" class="catalog-item__back">назад</a>
-                        </ul>
+                        </div>
                     </div>
                     <hr>
     
@@ -412,10 +432,10 @@
         </div>
     </section>
 <!-- Отзывы -->
-    <section class="recall">
+    <section class="recall wow fadeInUp">
         <div class="container">
             <h2 class="title">отзывы клиентов</h2>
-            <div class="recall__block">
+            <div class="recall__block wow animate__animated animate__fadeInUp" data-wow-duration="2s" data-wow-delay="1s">
                 <div class="recall__round">
                     <img src="img/reviews/irina.png" alt="irina">
                 </div>
@@ -431,7 +451,7 @@
                         </div>
                 </div>
             </div>
-            <div class="recall__block">
+            <div class="recall__block wow animate__animated animate__fadeInUp" data-wow-duration="2s" data-wow-delay="1s">
                 <div class="recall__round">
                     <img src="img/reviews/ivan.png" alt="ivan">
                 </div>
@@ -445,7 +465,7 @@
                         </div>
                 </div>
             </div>
-            <div class="recall__block">
+            <div class="recall__block wow animate__animated animate__fadeInUp" data-wow-duration="2s" data-wow-delay="1s">
                 <div class="recall__round">
                     <img src="img/reviews/julia.png" alt="julia">
                 </div>
@@ -510,12 +530,23 @@
                 в ближайшее время!</div>
         </div>
     </div>
+<!-- Элемент поднятия вверх страницы -->
+    <a href="#up" class="pageup">
+        <img src="icons/circle_up.svg" alt="circle_up">
+    </a>
+    
+<!-- Элемент поднятия вверх каталога на маленьких устройствах, пока не разобрался с js, оставил на будущее -->
+    <!-- <a href="#up_catalog" class="catalog_up">
+        <img src="icons/catalog_up.svg" alt="catalog_up">
+    </a> -->
+
     <!-- Подключаем скрипт -->
-    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
-    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script src="js/slick.min.js"></script>
     <script src="js/jquery.validate.min.js"></script>
     <script src="js/jquery.maskedinput.min.js"></script>
+    <script src="js/wow.min.js"></script>
     <script src="js/script.js"></script>
     
     
